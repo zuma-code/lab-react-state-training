@@ -14,10 +14,40 @@ function LikeButton() {
   return (
     <div>
       {/* Step 3: Render the buttons, each with its own like count */}
-      <button onClick={() => handleLikeClick(0)}>
+      <button onClick={() => handleLikeClick(0)}
+        style={{
+          backgroundColor: "blueviolet",
+          cursor: "pointer",
+          border: "none",
+          borderRadius: "12px",
+          padding: "15px 30px",
+          fontSize: "18px",
+          color: "white",
+          fontWeight: "bold",
+          transition: "background-color 0.5s ease, transform 0.2s",
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+          outline: "none",
+        }}
+        onMouseEnter={(e) => (e.target.style.transform = "scale(1.1)")}
+        onMouseLeave={(e) => (e.target.style.transform = "scale(1)")}>
         {likes[0]} Likes
       </button>
-      <button onClick={() => handleLikeClick(1)}>
+      <button onClick={() => handleLikeClick(1)}style={{
+          backgroundColor: "green",
+          cursor: "pointer",
+          border: "none",
+          borderRadius: "12px",
+          padding: "15px 30px",
+          margin: "40px",
+          fontSize: "18px",
+          color: "white",
+          fontWeight: "bold",
+          transition: "background-color 0.5s ease, transform 0.2s",
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+          outline: "none",
+        }}
+        onMouseEnter={(e) => (e.target.style.transform = "scale(1.1)")}
+        onMouseLeave={(e) => (e.target.style.transform = "scale(1)")}> 
         {likes[1]} Likes
       </button>
     </div>

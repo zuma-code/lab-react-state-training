@@ -3,6 +3,9 @@ import LikeButton from "./components/LikeButton";
 import Counter from "./components/Counter";
 import ClickablePicture from "./components/ClickablePicture";
 import Dice from "./components/Dice";
+import DiscoButton from './components/DiscoButton';
+
+
 
 function App() {
   return (
@@ -15,7 +18,9 @@ function App() {
        <h2>Clickable picture</h2>
        <ClickablePicture />
        <h2>Roll dice </h2>
-        <Dice />
+       <Dice />
+       <DiscoButton />
+     
 
     </div>
   );
